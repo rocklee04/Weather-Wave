@@ -13,7 +13,6 @@ const RealTimeWeather = ({ latitude, longitude, location }) => {
       try {
         const data = await getRealTimeWeather(latitude, longitude, location);
         setWeatherData(data.data.values);
-        console.log(data);
         setLoading(false);
       } catch (error) {
         setError(error.message);

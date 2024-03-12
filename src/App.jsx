@@ -4,6 +4,10 @@ import ForecastWeather from './components/ForecastWeather';
 import LocationInput from './components/LocationInput';
 import './App.css';
 
+const API_KEY = '52eaB0a1vE1SOEijwjHGNTVMDqzC6Ln7';
+const API_URL = 'https://api.tomorrow.io/v4/weather/realtime';
+
+
 function App() {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
@@ -34,7 +38,7 @@ function App() {
 
   const getCityName = async (latitude, longitude) => {
     try {
-      const response = await fetch(`https://api.tomorrow.io/v4/weather/apiKey=52eaB0a1vE1SOEijwjHGNTVMDqzC6Ln7&location=${latitude},${longitude}`);
+      const response = await fetch(`${API_URL}?apikey=${API_KEY}&location=${latitude},${longitude}`);
       const data = await response.json();
       return data.location.name;
     } catch (error) {

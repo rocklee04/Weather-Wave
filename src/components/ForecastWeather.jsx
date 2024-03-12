@@ -12,7 +12,6 @@ const ForecastWeather = ({ latitude, longitude, location}) => {
     const fetchForecastData = async () => {
       try {
         const data = await getForecastWeather(latitude, longitude, location);
-        // console.log(data);
         setForecastData(data);
         setLoading(false);
       } catch (error) {

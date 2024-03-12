@@ -11,7 +11,6 @@ export const getForecastWeather = async (latitude, longitude, location) => {
     } else {
       response = await axios.get(`${API_URL}?apikey=${API_KEY}&location=${location}&fields=temperatureAvg,temperatureMin,temperatureMax,sunriseTime,sunsetTime&units=metric&timesteps=1d`);
     }
-    console.log(response);
     const dailyForecasts = response.data?.data?.timelines?.[0]?.intervals || [];
     const forecastData = dailyForecasts.map((forecast) => {
       const date = new Date(forecast.startTime);

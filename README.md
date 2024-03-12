@@ -35,7 +35,7 @@ This project is a web application built to provide users with real-time and fore
   - If you encounter API-related issues, ensure that your API keys are valid and correctly configured.
 
 ## Deployed Application:
-The application is deployed and accessible at the following link: [Weather Application](<deployed-url>)
+The application is deployed and accessible at the following link: [Weather Application](https://weather-wave-iota.vercel.app/)
 
 ## Contact Information:
 For any queries or assistance regarding this project, feel free to contact:
