@@ -1,0 +1,23 @@
+.real-time-weather-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
+  .weather-icon img{
+    width: 100%;
+  }
+  
+  .weather-info {
+    text-align: center;
+  }
+  
+  .temperature {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .humidity {
+    font-size: 0.8rem;
+  }
+  
