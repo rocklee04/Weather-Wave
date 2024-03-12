@@ -1,0 +1,34 @@
+
+.app-container {
+  text-align: center;
+  backdrop-filter: blur(15px);
+  background: transparent;
+  /* background-color: rgb(23, 39, 98); */
+  width: 60%;
+  margin: 6% auto auto auto;
+  padding: 30px;
+  color: white;
+  border: 2px solid  rgb(82, 82, 82);
+}
+
+.app-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgb(163, 161, 160);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.weather-container {
+  margin-bottom: 40px;
+}
